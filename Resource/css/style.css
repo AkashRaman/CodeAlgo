@@ -172,7 +172,7 @@ h3{
     margin-left: 15px;
 }
 
-.btn:link, 
+.btn, 
 .btn:visited {
     display: inline-block;
     padding: 10px 30px;
@@ -186,7 +186,7 @@ h3{
     transition: all 0.3s;
 }
 
-.btn-full:link,
+.btn-full,
 .btn-full:visited {
     background-color: #6dff63;
     float: left;
@@ -195,10 +195,11 @@ h3{
     
 }
 
-.btn-ghost:link,
+.btn-ghost,
 .btn-ghost:visited { 
     -webkit-transform-origin: top right;
     transform-origin: top right;
+    background-color: #fff;
 }
 
 .btn-full:hover,
