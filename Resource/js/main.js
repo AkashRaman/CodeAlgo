@@ -25,11 +25,11 @@ class database {
         if(!data){
             const guest = JSON.parse(localStorage.getItem('guest'));
             this.#currentAccount = guest;
-            store.insertAdjacentHTML('afterbegin',`${guest.name}`);
+            store.insertAdjacentHTML('afterbegin',`${guest.firstName}`);
             console.log(guest.name);
             return;
         }
-        store.insertAdjacentHTML('afterbegin',`${data.name}`);
+        store.insertAdjacentHTML('afterbegin',`${data.LastName}`);
         console.log(data.name);
     }
 }
