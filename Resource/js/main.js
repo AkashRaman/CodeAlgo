@@ -29,7 +29,7 @@ class database {
             console.log(guest.name);
             return;
         }
-        store.insertAdjacentHTML('afterbegin',`${data.LastName}`);
+        store.insertAdjacentHTML('afterbegin',`${data.firstName}`);
         console.log(data.name);
     }
 }
