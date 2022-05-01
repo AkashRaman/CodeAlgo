@@ -1032,6 +1032,11 @@ nav {
     transition: all 0.2s;
 }
 
+.user-name-list{
+    position: relative;
+    z-index: 999999!important;
+}
+
 .user-name{
     background-color: #6dff63;
 }
@@ -1263,3 +1268,70 @@ nav {
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28) !important;
 }
 
+
+.redirecting-modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 9999;
+    transition: all 0.5s, transform 1ms;
+}
+.redirecting-modal.hidden{
+    height: 0;
+    opacity: 0;
+    z-index: 0!important;
+}
+
+.red-box{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10% 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background-color: #6dff63;
+    transition: all 0.1s, opacity 1ms;
+}
+
+.red-box.hidden{
+    height: 0;
+    opacity: 0!important;
+}
+
+.logout-list{
+    margin-top: 55px;
+    margin-left: -20%;
+    opacity: 1;
+    transition: all 0.1s,height 0.2s;
+}
+
+.logout-list.hidden{
+    margin-top: 0px;
+    height: 0;
+    opacity: 0;
+    width: 20%;
+}
+
+.logout-box{
+    background-color: #0c0c10;
+}
+.logout-box a{
+    color: #6dff63!important;
+    width: 100%!important;
+}
+.logout-box a:hover{
+    text-decoration-color: transparent;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.logout-box{
+    cursor: pointer;
+}
