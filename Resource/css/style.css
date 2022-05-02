@@ -137,10 +137,10 @@ h3{
 
 
 .hero-text-box p{
-    font-size: 145%;
+    font-size: 125%;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .long-copy p{
@@ -1048,6 +1048,9 @@ nav {
     text-decoration-color: transparent;
 }
 
+#task{
+
+}
 
 .sticky .nav-section.hover li div a:hover,
 .sticky .nav-section li div a:active{

@@ -1,6 +1,7 @@
 'use strict';
 
-const store = document.getElementById('name');
+const store = document.querySelector('.name');
+const task = document.querySelector('#task');
 const userNameList = document.querySelector('.user-name-list');
 const logoutList = document.querySelector('.logout-list');
 const modal = document.querySelector('.redirecting-modal');
@@ -51,6 +52,7 @@ class database {
             return;
         }
         store.insertAdjacentHTML('afterbegin',`${data.firstName}`);
+        task.insertAdjacentHTML('afterbegin',`${data.type === 'student' ? 'Practice': 'Assign'}`);
     }
 
     _logout(){
