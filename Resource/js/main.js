@@ -53,7 +53,6 @@ class database {
             return;
         }
         store.insertAdjacentHTML('afterbegin',`${data.firstName}`);
-        store2.insertAdjacentHTML('afterbegin',`${data.firstName}`);
         task.insertAdjacentHTML('afterbegin',`${data.type === 'student' ? 'Practice': 'Assign'}`);
     }
 
